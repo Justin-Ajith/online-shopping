@@ -1,0 +1,18 @@
+.add-to-card-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.add-to-card {
+  right: 8px;
+  top: 150px;
+  cursor: pointer;
+}
+
+.add-to-card-icon {
+  background: #ffffff;
+  border-radius: 100%;
+  border: 1px solid #333333;
+  text-align: center;
+  padding: 4px 8px 8px 8px;
+}

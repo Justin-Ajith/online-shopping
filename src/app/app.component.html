@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Online Shoping</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarText">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Order</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="app-banner">
+  <img src="assets/images/banner.jpg" alt="" width="100%">
+</div>
+
+<div class="my-4">
+  <div class="container">
+
+    <div class="new-product">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="fw-bold">New Products</h4>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6" *ngFor="let productData of products">
+          <app-product-card [product]="productData" (addToCardEvent)="perantAddToCard($event)"></app-product-card>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="more-to-love mt-5">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="fw-bold">More to love</h4>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6" *ngFor="let productData of products">
+          <app-product-card [product]="productData" (addToCardEvent)="perantAddToCard($event)"></app-product-card>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer bg-dark text-white py-4">
+  <div class="text-center">
+    All rights reseved.
+  </div>
+</div>
